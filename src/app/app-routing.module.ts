@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'medicamento-detalle',
     loadChildren: () => import('./medicamento-detalle/medicamento-detalle.module').then( m => m.MedicamentoDetallePageModule)
   },
+  {
+    path: 'quienes-somos',
+    loadChildren: () => import('./quienes-somos/quienes-somos.module').then( m => m.QuienesSomosPageModule)
+  },
 ];
 
 @NgModule({
