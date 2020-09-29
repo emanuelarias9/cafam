@@ -35,6 +35,26 @@ const routes: Routes = [
     path: 'sucursales',
     loadChildren: () => import('./sucursales/sucursales.module').then( m => m.SucursalesPageModule)
   },
+  {
+    path: 'analgesicos',
+    loadChildren: () => import('./analgesicos/analgesicos.module').then( m => m.AnalgesicosPageModule)
+  },
+  {
+    path: 'antialergicos',
+    loadChildren: () => import('./antialergicos/antialergicos.module').then( m => m.AntialergicosPageModule)
+  },
+  {
+    path: 'antiinfecciosos',
+    loadChildren: () => import('./antiinfecciosos/antiinfecciosos.module').then( m => m.AntiinfecciososPageModule)
+  },
+  {
+    path: 'antiinflamatorios',
+    loadChildren: () => import('./antiinflamatorios/antiinflamatorios.module').then( m => m.AntiinflamatoriosPageModule)
+  },
+  {
+    path: 'antidiarreicos',
+    loadChildren: () => import('./antidiarreicos/antidiarreicos.module').then( m => m.AntidiarreicosPageModule)
+  },
 ];
 
 @NgModule({
