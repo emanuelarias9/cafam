@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'usuarios',
     pathMatch: 'full'
   },
   {
@@ -55,6 +55,15 @@ const routes: Routes = [
     path: 'antidiarreicos',
     loadChildren: () => import('./antidiarreicos/antidiarreicos.module').then( m => m.AntidiarreicosPageModule)
   },
+  {
+    path: 'usuarios',
+    loadChildren: () => import('./pages/usuarios/usuarios.module').then( m => m.UsuariosPageModule)
+  },
+  {
+    path: 'usuario/:id',
+    loadChildren: () => import('./pages/usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
+
 ];
 
 @NgModule({

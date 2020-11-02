@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Usuarios Favoritos</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color="primary" menu="mainMenu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list button *ngFor="let item of (results | async)" [routerLink]="['/', 'usuario' , item.id]">
+<ion-label text-white>
+<h3>{{ item.name }}</h3>
+</ion-label>
+</ion-list>
+</ion-content>
